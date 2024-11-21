@@ -1,56 +1,107 @@
 import streamlit as st
+import frontend
 from openai import OpenAI
+from PIL import Image
 
-# Show title and description.
-st.title("💬 Chatbot")
-st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
-)
+# Configuración de la página
+PAISA_BOT_LOGO_PATH = "logos/paisabot_avatar.jpeg"
+USER_LOGO_PATH = "logos/user_avatar.png"
+st.set_page_config(page_title="Paisa-Bot - Asistente de IA", layout="centered", page_icon=PAISA_BOT_LOGO_PATH)
 
-# Ask user for their OpenAI API key via `st.text_input`.
-# Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
-# via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.text_input("OpenAI API Key", type="password")
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
+# Inicializar estilos personalizados
+frontend.render_custom_styles()
 
-    # Create an OpenAI client.
-    client = OpenAI(api_key=openai_api_key)
+# Cachear las imágenes
+@st.cache_data
+def load_image(image_path):
+    return Image.open(image_path)
 
-    # Create a session state variable to store the chat messages. This ensures that the
-    # messages persist across reruns.
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+paisabot_logo = load_image(PAISA_BOT_LOGO_PATH)
+user_logo = load_image(USER_LOGO_PATH)
 
-    # Display the existing chat messages via `st.chat_message`.
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+# Inicialización del estado
+if "selected_mode" not in st.session_state:
+    st.session_state.selected_mode = None
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+if "initial_message_shown" not in st.session_state:
+    st.session_state.initial_message_shown = False
+if "subtitle_shown" not in st.session_state:
+    st.session_state.subtitle_shown = False
+if "rendered_message_ids" not in st.session_state:
+    st.session_state.rendered_message_ids = set()
 
-    # Create a chat input field to allow the user to enter a message. This will display
-    # automatically at the bottom of the page.
-    if prompt := st.chat_input("What is up?"):
+# Archivos de instrucciones del sistema
+INSTRUCTIONS_FILES = {
+    "Payador con IA 🎤🧉": "instructions_payador.txt",
+    "Trivia 🤔🎲": "instructions_trivia.txt",
+    "Mito o Realidad 🌟": "instructions_mito.txt",
+    "Interacción Normal 🤝💬": "instructions_normal.txt",
+}
 
-        # Store and display the current prompt.
+# Obtener clave API de secrets
+openai_api_key = st.secrets["openai"]["api_key"]
+
+# Función para cargar instrucciones
+def load_instructions(mode):
+    try:
+        with open(INSTRUCTIONS_FILES[mode], "r", encoding="utf-8") as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        st.error(f"No se encontró el archivo de instrucciones para {mode}.")
+        return None
+
+# Renderizar el encabezado (siempre visible)
+frontend.render_title()
+
+# Renderizar subtítulo dinámico basado en el modo seleccionado
+if st.session_state.selected_mode:
+    if not st.session_state.subtitle_shown:
+        frontend.render_subheader(st.session_state.selected_mode)
+        st.session_state.subtitle_shown = True
+    else:
+        st.subheader(st.session_state.selected_mode.capitalize())
+
+# Renderizar la introducción y botones si no se ha seleccionado un modo
+if st.session_state.selected_mode is None:
+    frontend.render_intro()
+
+# Mostrar chat y mensajes si se seleccionó un modo
+if st.session_state.selected_mode:
+    if not st.session_state.initial_message_shown:
+        instructions = load_instructions(st.session_state.selected_mode)
+        if instructions:
+            st.session_state.messages.append({"role": "system", "content": instructions})
+        st.session_state.messages.append({"role": "assistant", "content": st.session_state.initial_message})
+        st.session_state.initial_message_shown = True
+
+    # Renderizar mensajes existentes
+    for i, message in enumerate(st.session_state.messages):
+        if message["role"] != "system":
+            message_id = f"{message['role']}-{i}"
+            if message_id not in st.session_state.rendered_message_ids:
+                if message["role"] == "assistant":
+                    frontend.render_dynamic_message(message, avatar=paisabot_logo)
+                else:
+                    frontend.render_chat_message(message["role"], message["content"], avatar=user_logo)
+                st.session_state.rendered_message_ids.add(message_id)
+
+    # Renderizar el campo de entrada
+    if prompt := frontend.render_input():
         st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
+        frontend.render_chat_message("user", prompt, avatar=user_logo)
 
-        # Generate a response using the OpenAI API.
-        stream = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-            stream=True,
+        client = OpenAI(api_key=openai_api_key)
+
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=st.session_state.messages,
+            temperature=0.2
         )
 
-        # Stream the response to the chat using `st.write_stream`, then store it in 
-        # session state.
-        with st.chat_message("assistant"):
-            response = st.write_stream(stream)
-        st.session_state.messages.append({"role": "assistant", "content": response})
+        response_content = response.choices[0].message.content
+        response_message = {"role": "assistant", "content": response_content}
+        st.session_state.messages.append(response_message)
+
+        frontend.render_dynamic_message(response_message, avatar=paisabot_logo)
+        st.session_state.rendered_message_ids.add(f"assistant-{len(st.session_state.messages) - 1}")

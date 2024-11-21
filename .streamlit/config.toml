@@ -1,0 +1,9 @@
+[theme]
+primaryColor = "#4b83c0"
+backgroundColor = "#f4f5f7"
+secondaryBackgroundColor = "#f4f5f7"
+textColor = "#000000"
+font= "fira sans"
+
+[theme.userSettings]
+base = "custom"
