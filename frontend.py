@@ -7,7 +7,8 @@ SECONDARY_COLOR = "#878889"
 BACKGROUND_COLOR = "#f4f5f7"
 
 ICOMEX_LOGO_PATH = "logos/ICOMEX_Logos_sin_fondo.png"
-PAISA_BOT_LOGO_PATH = "logos/paisabot_avatar.png"
+PAISA_BOT_LOGO_PATH = "logos/paisabot_avatar_transparent.png"
+
 
 # Estilo personalizado
 def render_custom_styles():
@@ -28,30 +29,6 @@ def render_custom_styles():
                 line-height: 1.6;
                 margin-bottom: 2rem;
                 text-align: justify;
-            }}
-            .intro-question {{
-                font-size: 1.6rem;
-                font-weight: bold;
-                text-align: center;
-                margin-bottom: 2rem;
-            }}
-            .stButton>button {{
-                background-color: {SECONDARY_COLOR};
-                color: white;
-                border-radius: 10px;
-                padding: 12px 24px;
-                font-size: 19px;
-                transition: background-color 0.3s ease;
-            }}
-            .stButton>button:hover {{
-                background-color: {PRIMARY_COLOR};
-                color: white;
-            }}
-            .button-container {{
-                display: flex;
-                justify-content: center;
-                gap: 1.5rem;
-                margin-top: 2rem;
             }}
         </style>
         """,
@@ -86,13 +63,20 @@ def render_intro():
         unsafe_allow_html=True,
     )
 
-    col1, col2 = st.columns(2, gap="medium")
-    with col1:
-        st.button("Payador con IA 🎤🧉", key="payador")
-        st.button("Trivia 🤔🎲", key="trivia")
-    with col2:
-        st.button("Mito o Realidad 🌟", key="mito")
-        st.button("Interacción Normal 🤝💬", key="normal")
-
 def render_input():
     return st.chat_input("Escribe tu mensaje aquí...")
+
+def render_dynamic_message(message, avatar=None):
+    if message["role"] == "assistant":
+        with st.chat_message(message["role"], avatar=avatar):
+            container = st.empty()
+            text = message["content"]
+            displayed_text = ""
+            for char in text:
+                displayed_text += char
+                container.markdown(displayed_text)
+                time.sleep(0.005)
+
+def render_chat_message(role, content, avatar=None):
+    with st.chat_message(role, avatar=avatar):
+        st.markdown(content)
