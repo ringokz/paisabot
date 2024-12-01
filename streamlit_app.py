@@ -112,6 +112,9 @@ def clean_message_for_audio(message_content):
     message_content = message_content.replace("agencia@icomexlapampa.org","agencia, arroba, icomexlapampa, punto, org.")
     message_content = message_content.replace("08:00 a 15:00 hs","ocho a quince horas")
     message_content = message_content.replace("https://maps.app.goo.gl/RET62U9mK9JecpmT9","")
+    message_content = message_content.replace("!",".")
+    message_content = message_content.replace("/n","...")
+    message_content = message_content.replace("¡","")
     # Remove Markdown bold (**text** -> text)
     message_content = re.sub(r"\*\*(.*?)\*\*", r"\1", message_content)
     # Remove emojis
@@ -230,10 +233,10 @@ if st.session_state.selected_topic:
         client = OpenAI(api_key=st.secrets["openai"]["api_key"])
         response = client.chat.completions.create(
             model="gpt-4o-mini",
-            messages=st.session_state.messages,
-            top_p=0.1,                    
-            frequency_penalty=1, 
-            presence_penalty=-1   
+            messages=st.session_state.messages,                    
+            temperature=0.35,
+            frequency_penalty=-1.5, 
+            presence_penalty=-1.5   
         )
 
         response_content = response.choices[0].message.content
