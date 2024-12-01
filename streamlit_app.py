@@ -113,7 +113,6 @@ def clean_message_for_audio(message_content):
     message_content = message_content.replace("08:00 a 15:00 hs","ocho a quince horas")
     message_content = message_content.replace("https://maps.app.goo.gl/RET62U9mK9JecpmT9","")
     message_content = message_content.replace("!",".")
-    message_content = message_content.replace("/n","...")
     message_content = message_content.replace("¡","")
     # Remove Markdown bold (**text** -> text)
     message_content = re.sub(r"\*\*(.*?)\*\*", r"\1", message_content)
@@ -123,6 +122,8 @@ def clean_message_for_audio(message_content):
     message_content = message_content.replace("#", "")
     # Replace line breaks with spaces
     message_content = message_content.replace(":", ".")
+    # Reemplazar párrafos que terminan en punto seguido de salto de línea doble por "..."
+    message_content = re.sub(r'\.\s*\n\s*\n', '...\n\n', message_content)
     return message_content
 
 # Function to load instructions
@@ -233,10 +234,10 @@ if st.session_state.selected_topic:
         client = OpenAI(api_key=st.secrets["openai"]["api_key"])
         response = client.chat.completions.create(
             model="gpt-4o-mini",
-            messages=st.session_state.messages,                    
-            temperature=0.35,
-            frequency_penalty=-1.5, 
-            presence_penalty=-1.5   
+            messages=st.session_state.messages,
+            top_p=0.1,                    
+            frequency_penalty=1, 
+            presence_penalty=-1   
         )
 
         response_content = response.choices[0].message.content
