@@ -1,8 +1,5 @@
 [theme]
-primaryColor = "#4b83c0"
-backgroundColor = "#f4f5f7"
-secondaryBackgroundColor = "#f4f5f7"
-textColor = "#000000"
-
-[theme.userSettings]
-base = "custom"
+primaryColor="#4b83c0"
+backgroundColor="#d8ddde"
+secondaryBackgroundColor="#ecefef"
+textColor="#000000"

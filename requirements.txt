@@ -1,3 +1,8 @@
 streamlit
 openai
 Pillow==10.0.0
+requests
+emoji
+elevenlabs
+pydub
+ffmpeg-python
