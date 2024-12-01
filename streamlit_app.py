@@ -171,9 +171,9 @@ def generar_audio_elevenlabs_sdk(texto, voice_id="ZtseFBfK9giRDiPkiE6o"):
             model_id="eleven_multilingual_v2",
             text=texto,
             voice_settings={
-                "stability": 0.22,
+                "stability": 0.30,
                 "similarity_boost": 0.77,
-                "style": 0.80,
+                "style": 0.60,
                 "use_speaker_boost": True
             }
         )
