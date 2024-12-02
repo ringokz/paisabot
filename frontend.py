@@ -192,7 +192,7 @@ def select_payador():
     "mi payada te lo expresa,  \n"
     "¡elegí bien te pido!  \n"
     "\n"
-    "**Temáticas sugeridas: ¿qué exportamos?, ¿dónde exportamos?, ¿qué oportunidades de inversión hay?, ¿qué es una ronda de negocios?, ¿qué es el Centro de Negocios de Neuquén?, ¿Qué es y qué hace I-COMEX?**"
+    "**Temáticas sugeridas: productos y destinos de exportación, oportunidades de inversión, rondas de negocios, ferias internacionales,  Centro de Negocios de Neuquén, Agencia I-COMEX?**"
 )
 
     st.session_state.initial_message_shown = False
