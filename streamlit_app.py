@@ -121,17 +121,22 @@ def clean_message_for_audio(message_content):
     # Remove all "#" characters
     message_content = message_content.replace("#", "")
     # Replace line breaks with spaces
-    message_content = message_content.replace(":", ".")
+    message_content = message_content.replace(":", "...")
+    
     # Reemplazar párrafos que terminan en punto seguido de salto de línea doble por "..."
-    message_content = re.sub(r'\.\s*\n\s*\n', '...\n\n', message_content)
+    #message_content = re.sub(r'\,\s*\n', '--\n', message_content)
+    #message_content = re.sub(r'\.\s*\n\s*\n', ' <break time="3s" />\n\n', message_content)
+    message_content = message_content.replace(".", '<break time="1s" />')
+    message_content = re.sub(r'<break time="1s" />  $', '.', message_content)
+    message_content = re.sub(r'<break time="1s" />$', '.', message_content)    
     return message_content
 
 # Function to load instructions
 def load_instructions(topic):
     INSTRUCTIONS_FILES = {
-        "Mito o realidad": "instructions_mito_realidad.txt",
-        "Trivia": "instructions_trivia.txt",
-        "Payador con IA": "instructions_payador.txt"
+        "Mito o realidad": "instructions\instructions_mito_realidad.txt",
+        "Trivia": "instructions\instructions_trivia.txt",
+        "Payador con IA": "instructions\instructions_payador.txt"
     }
     try:
         with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as file:
@@ -173,7 +178,7 @@ def generar_audio_elevenlabs_sdk(texto, voice_id="ZtseFBfK9giRDiPkiE6o"):
             voice_settings={
                 "stability": 0.30,
                 "similarity_boost": 0.77,
-                "style": 0.60,
+                "style": 0.8,
                 "use_speaker_boost": True
             }
         )
@@ -235,8 +240,8 @@ if st.session_state.selected_topic:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=st.session_state.messages,
-            top_p=0.1,                    
-            frequency_penalty=1, 
+            temperature=1,                    
+            frequency_penalty=0, 
             presence_penalty=-1   
         )
 
