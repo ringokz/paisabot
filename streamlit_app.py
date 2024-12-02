@@ -260,7 +260,7 @@ if st.session_state.selected_topic:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=st.session_state.messages,
-            temperature=1,                    
+            temperature=0.5,                    
             frequency_penalty=0, 
             presence_penalty=-1   
         )
