@@ -8,6 +8,8 @@ import re
 from elevenlabs import ElevenLabs
 from pydub import AudioSegment
 import random
+from pathlib import Path
+import os
 
 # Configuración de la página
 PRIMARY_COLOR = "#4b83c0"
@@ -131,19 +133,37 @@ def clean_message_for_audio(message_content):
     message_content = re.sub(r'<break time="1s" />$', '.', message_content)    
     return message_content
 
-# Function to load instructions
 def load_instructions(topic):
+    # Definir el directorio base para instrucciones
+    instructions_dir = Path(__file__).parent / "instructions"
+
+    # Diccionario de archivos de instrucciones
     INSTRUCTIONS_FILES = {
-        "Mito o realidad": "instructions\instructions_mito_realidad.txt",
-        "Trivia": "instructions\instructions_trivia.txt",
-        "Payador con IA": "instructions\instructions_payador.txt"
+        "Mito o realidad": instructions_dir / "instructions_mito_realidad.txt",
+        "Trivia": instructions_dir / "instructions_trivia.txt",
+        "Payador con IA": instructions_dir / "instructions_payador.txt",
     }
+
     try:
         with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as file:
             return file.read().strip()
     except FileNotFoundError:
-        st.error(f"No se encontró el archivo de instrucciones para {topic}.")
+        st.error(f"No se encontró el archivo de instrucciones para {topic}. Verifica el repositorio y la carpeta.")
         return None
+
+# # Function to load instructions
+# def load_instructions(topic):
+#     INSTRUCTIONS_FILES = {
+#         "Mito o realidad": "instructions\instructions_mito_realidad.txt",
+#         "Trivia": "instructions\instructions_trivia.txt",
+#         "Payador con IA": "instructions\instructions_payador.txt"
+#     }
+#     try:
+#         with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as file:
+#             return file.read().strip()
+#     except FileNotFoundError:
+#         st.error(f"No se encontró el archivo de instrucciones para {topic}.")
+#         return None
 
 paisa_logo = load_image(PAISA_AVATAR_PATH)
 user_logo = load_image(USER_LOGO_PATH)
