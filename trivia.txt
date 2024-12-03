@@ -1,0 +1,409 @@
+""" Pregunta: Las zonas francas son áreas donde las empresas tienen beneficios para la producción y el comercio exterior, ¿cuántas zonas francas tiene La Pampa? Opciones: 1, 2 y 3. Respuesta correcta: 1. Dato extra: Se encuentra en General Pico, comenzó a operar en 1998.
+""",
+"""
+Pregunta: La Aduana es el organismo encargado de fiscalizar el comercio exterior. ¿Existe Aduana en La Pampa? Opciones: sí y no. Respuesta correcta: sí.
+""",
+
+"""
+Pregunta: La Aduana es el organismo encargado de fiscalizar el comercio exterior, ¿en cuál de estas localidades de nuestra provincia se localiza su oficina? Opciones: General Acha, Santa Rosa y General Pico. Respuesta correcta: General Pico.
+""",
+
+"""
+Pregunta: ¿Si una empresa tiene domicilio fiscal en La Pampa, puede inscribirse en otra Aduana que no sea la de General Pico? Opciones: sí y no. Respuesta correcta: no.
+""",
+
+"""
+Pregunta: Si estoy radicado en la provincia de La Pampa ¿es posible exportar a través de otra Aduana que no sea la de General Pico? Opciones: sí y no. Respuesta correcta: sí. Dato extra: Aduana ZF no es lo mismo que la Aduana para el resto de las empresas.
+""",
+
+"""
+Pregunta: ¿Para inscribirse como importador o exportador es necesario acercarse físicamente a las oficinas en General Pico? Opciones: sí y no. Respuesta correcta: no. Dato extra: Antes el trámite de inscripción se hacía personalmente.
+""",
+
+"""
+Pregunta: Las zonas francas son áreas donde las empresas tienen beneficios para la producción y el comercio exterior, ¿cuál de estos es un beneficio para las empresas que operan dentro de ellas? Opciones: Beneficios Impositivos, Beneficios Financieros y ambas son correctas. Respuesta correcta: Ambas son correctas.
+""",
+
+"""
+Pregunta: ¿Qué beneficio otorga la ZF de General Pico que no otorga ninguna otra ZF del país? Opciones: Subsidio en combustibles y puede integrar el 100% de la producción al TAG (Territorio Aduanero General). Respuesta correcta: puede integrar el 100% de la producción al TAG (Territorio Aduanero General). Dato extra: Este beneficio permite la radicación de industrias convirtiéndola en un Parque Industrial que además posee beneficios aduaneros.
+""",
+
+"""
+Pregunta: El comercio exterior se regula a través de una normativa nacional, ¿en nuestro país cual es la legislación que lo regula? Opciones: Código Aduanero, Código Civil y Código Penal. Respuesta correcta: Código Aduanero. Dato extra: Ley 22.415.
+""",
+
+"""
+Pregunta: ¿Qué organismo controla la entrada y salida de toda la mercadería de un país? Opciones: SENASA, Aduana y AAICI. Respuesta correcta: Aduana.
+""",
+"""
+Pregunta: Las zonas francas son áreas donde las empresas tienen beneficios para la producción y el comercio exterior ¿Cuántas existen en el País? Opciones: 13, 15 y 8. Respuesta correcta: 13.
+""",
+"""
+Pregunta: ¿Qué se entiende posición arancelaria? Opciones: Código que identifica servicios a nivel internacional, código que identifica productos a nivel internacional y código que identifica productos y servicios a nivel internacional. Respuesta correcta: Código que identifica productos a nivel internacional.
+""",
+"""
+Pregunta: La Agencia Argentina de Inversiones y Comercio Internacional es el organismo encargado de la promoción de inversiones y comercio exterior de nuestro país ¿Cuántos organismos participan de su red federal? Opciones: Uno por provincia, uno por región y uno por ciudad. Respuesta correcta: uno por provincia.
+""",
+"""
+Pregunta: ¿Cuántos parques industriales tiene La Pampa? Opciones: 25, 17 y 33. Respuesta correcta: 25.
+""",
+"""
+Pregunta: ¿Qué representan las siglas V.U.C.E? Opciones: Ventanilla Única de Comercio Exterior, Valores Unitarios de Comercio Exterior y Valores Unánimes de Comercio Exterior. Respuesta correcta: Ventanilla Única de Comercio Exterior.
+""",
+"""
+Pregunta: ¿Qué localidades integran el Ente Provincial del Río Colorado? Opciones: Catriel, 25 de Mayo, Puelén y Chacharramendi; Duval, La Adela, 25 de Mayo y Casa de Piedra. Respuesta correcta: Duval, La Adela, 25 de Mayo y Casa de Piedra.
+""",
+"""
+Pregunta: ¿Qué Banco participa de manera conjunta con la Agencia I-COMEX en el proceso de otorgamiento de crédito? Opciones: Banco Santander Río, Banco de La Pampa y ambas son correctas. Respuesta correcta: Banco de La Pampa.
+""",
+"""
+Pregunta: ¿Cuál de estos es un producto pampeano que compra Uruguay? Opciones: juguetes de madera, mesas de plástico y televisores. Respuesta correcta: juguetes de madera.
+""",
+"""
+Pregunta: Desde Argentina se envían productos a todo el mundo, ¿cuál crees que es el principal destino de estos? Opciones: Estados Unidos, Brasil y China. Respuesta correcta: China.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de vinos y espumantes pampeanos? Opciones: Canadá, Australia y Reino Unido; Rusia, Estados Unidos y Japón. Respuesta correcta: Canadá, Australia y Reino Unido.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de la miel y cera de abeja pampeana? Opciones: Estados Unidos, Japón y Reino Unido; Italia, Bélgica y China. Respuesta correcta: Estados Unidos, Japón y Reino Unido.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de las abejas reinas pampeanas? Opciones: España, Dinamarca y Reino Unido; Alemania, Suecia y Canadá. Respuesta correcta: España, Dinamarca y Reino Unido.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de la mayonesa pampeana? Opciones: Chile, Paraguay y Uruguay; Brasil, Colombia y Bolivia. Respuesta correcta: Chile, Paraguay y Uruguay.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de los cereales pampeanos? Opciones: China, Países Bajos y Japón; Brasil, México y Guatemala. Respuesta correcta: Brasil, México y Guatemala.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de la carne congelada pampeana? Opciones: China, Italia y Alemania; Brasil, Francia y Hong Kong. Respuesta correcta: China, Italia y Alemania.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación del aceite de girasol pampeano? Opciones: Chile, Paraguay y Uruguay; Brasil, Honduras y Ecuador. Respuesta correcta: Chile, Paraguay y Uruguay.
+""",
+"""
+Pregunta: ¿Cuáles son los principales destinos de exportación de los silo bolsa pampeano? Opciones: Australia, Ucrania y México; Brasil, Paraguay y Rusia. Respuesta correcta: Brasil, Paraguay y Rusia.
+""",
+"""
+Pregunta: ¿Cuál de estos es un producto pampeano que compra Brasil? Opciones: autos, sal y manzanas. Respuesta correcta: sal.
+""",
+"""
+Pregunta: ¿Cuál de estos es un producto pampeano que compra Japón? Opciones: litio, miel y limones. Respuesta correcta: miel.
+""",
+"""
+Pregunta: ¿Cuál de estos es un servicio pampeano que compra Estados Unidos? Opciones: Servicios de consultoría de software, servicios de conectividad y servicios de arquitectura. Respuesta correcta: servicios de consultoría de software.
+""",
+"""
+Pregunta: ¿Cuál de estos es un producto pampeano que compra Paraguay? Opciones: computadoras, jugo de naranja y silo bolsas. Respuesta correcta: silo bolsas.
+""",
+"""
+Pregunta: ¿Qué antigüedad tiene la Agencia I-Comex? Opciones: más de 20 años, menos de 5 años y entre 20 y 5 años. Respuesta correcta: menos de 5 años.
+""",
+"""
+Pregunta: ¿Qué organismos forman parte de la Agencia I-COMEX? Opciones: Ministerios, Secretarias y organismos relacionados con la actividad productiva pampeana; organismos nacionales. Respuesta correcta: Ministerios, Secretarias y organismos relacionados con la actividad productiva pampeana.
+""",
+"""
+Pregunta: ¿Qué es la Agencia La Pampa de Inversiones y Comercio Exterior (Agencia I-COMEX)? Opciones: Una organización dedicada exportar productos de La Pampa; una organización que promociona las inversiones y exportaciones pampeanas. Respuesta correcta: una organización que promociona las inversiones y exportaciones pampeanas.
+""",
+"""
+Pregunta: ¿Cuál es la misión de la Agencia? Opciones: Potenciar las exportaciones de talento local; posicionar a La Pampa como un destino atractivo para hacer negocios; fomentar las inversiones productivas en La Pampa; todas las anteriores. Respuesta correcta: todas las anteriores.
+""",
+"""
+Pregunta: ¿Cuáles son las áreas de la Agencia I-COMEX? Respuesta correcta: Comercio Exterior e Inversiones.
+""",
+"""
+Pregunta: ¿En qué localidad tiene su sede principal la Agencia I-COMEX? Opciones: General Pico; Santa Rosa; C.A.B.A; Neuquén. Respuesta correcta: Santa Rosa.
+""",
+"""
+Pregunta: ¿La Agencia I-COMEX fue creada por una Ley Nacional o Provincial? Opciones: Ley Nacional; Ley Provincial. Respuesta correcta: Ley Provincial. Dato extra: Ley 3305 (diciembre 2020) - comenzó a operar en febrero 2021.
+""",
+"""
+Pregunta: ¿Se pueden realizar pasantías como alumno de la UNLPam? Opciones: sí y no. Respuesta correcta: sí.
+""",
+"""
+Pregunta: ¿En qué provincia se encuentra el Centro de Negocios de I-COMEX? Opciones: Neuquén; Buenos Aires; Córdoba. Respuesta correcta: Neuquén.
+""",
+"""
+Pregunta: ¿Cuál es la función del Centro de Negocios de Neuquén? Opciones: exponer producción pampeana; que las empresas pampeanas proyecten la Patagonia como mercado; coordinar rondas de negocios y reuniones de vinculación comercial; todas las anteriores. Respuesta correcta: todas las anteriores.
+""",
+"""
+Pregunta: ¿Es posible exportar caballos en avión? Opciones: Verdadero – Falso. Respuesta correcta: verdadero.
+""",
+"""
+Pregunta: ¿Cuántas modalidades de transporte internacional existen? Opciones: 10, 3, 5. Respuesta correcta: 5. Dato extra: Aéreo - Marítimo - Terrestre – Ferroviario – Multimodal.
+""",
+"""
+Pregunta: Hay diferentes tipos de buques de acuerdo a lo que transportan, ¿cómo se llama el buque que transporta contenedores? Opciones: Portacontenedores – RoRo – Granelero. Respuesta correcta: Portacontenedores.
+""",
+"""
+Pregunta: Para poder transportar varias cajas a la vez se usan pallets, ¿de qué material pueden ser? Opciones: Sólo madera - Madera y plástico - Madera, plástico y metal. Respuesta correcta: Madera, plástico y metal.
+""",
+"""
+Pregunta: ¿En qué medio de transporte se envían principalmente los productos a Chile? Opciones: Buques – Camiones – Aviones. Respuesta correcta: camiones.
+""",
+"""
+Pregunta: ¿Cuál es el principal medio de transporte utilizado en exportación? Opciones: Camión – Buque – Tren - Avión. Respuesta correcta: buque.
+""",
+"""
+Pregunta: Los aviones se usan para enviar mercadería a otros países, ¿cuáles pensás que son los productos que más se exportan con este medio de transporte? Opciones: Alimentos perecederos de mucho valor – Cereales - Máquinas. Respuesta correcta: alimentos perecederos de mucho valor.
+""",
+"""
+Pregunta: La carne pampeana fresca tiene que estar en las góndolas de Europa en 96 hs, ¿en qué medio de transporte la llevarías? Opciones: Buque - Camión - Avión. Respuesta correcta: avión.
+""",
+"""
+Pregunta: ¿Cuáles son las áreas de la Agencia I-COMEX? Respuesta correcta: Comercio Exterior e Inversiones.
+""",
+"""
+Pregunta: ¿En qué localidad tiene su sede principal la Agencia I-COMEX? Opciones: General Pico; Santa Rosa; C.A.B.A; Neuquén. Respuesta correcta: Santa Rosa.
+""",
+"""
+Pregunta: ¿La Agencia I-COMEX fue creada por una Ley Nacional o Provincial? Opciones: Ley Nacional; Ley Provincial. Respuesta correcta: Ley Provincial. Dato extra: Ley 3305 (diciembre 2020) - comenzó a operar en febrero 2021.
+""",
+"""
+Pregunta: ¿Se pueden realizar pasantías como alumno de la UNLPam? Opciones: sí y no. Respuesta correcta: sí.
+""",
+"""
+Pregunta: ¿En qué provincia se encuentra el Centro de Negocios de I-COMEX? Opciones: Neuquén; Buenos Aires; Córdoba. Respuesta correcta: Neuquén.
+""",
+"""
+Pregunta: ¿Cuál es la función del Centro de Negocios de Neuquén? Opciones: exponer producción pampeana; que las empresas pampeanas proyecten la Patagonia como mercado; coordinar rondas de negocios y reuniones de vinculación comercial; todas las anteriores. Respuesta correcta: todas las anteriores.
+""",
+"""
+Pregunta: ¿Es posible exportar caballos en avión? Opciones: Verdadero – Falso. Respuesta correcta: verdadero.
+""",
+"""
+Pregunta: ¿Cuántas modalidades de transporte internacional existen? Opciones: 10, 3, 5. Respuesta correcta: 5. Dato extra: Aéreo - Marítimo - Terrestre – Ferroviario – Multimodal.
+""",
+"""
+Pregunta: Hay diferentes tipos de buques de acuerdo a lo que transportan, ¿cómo se llama el buque que transporta contenedores? Opciones: Portacontenedores – RoRo – Granelero. Respuesta correcta: Portacontenedores.
+""",
+"""
+Pregunta: Para poder transportar varias cajas a la vez se usan pallets, ¿de qué material pueden ser? Opciones: Sólo madera - Madera y plástico - Madera, plástico y metal. Respuesta correcta: Madera, plástico y metal.
+""",
+"""
+Pregunta: ¿En qué medio de transporte se envían principalmente los productos a Chile? Opciones: Buques – Camiones – Aviones. Respuesta correcta: camiones.
+""",
+"""
+Pregunta: ¿Cuál es el principal medio de transporte utilizado en exportación? Opciones: Camión – Buque – Tren - Avión. Respuesta correcta: buque.
+""",
+"""
+Pregunta: Los aviones se usan para enviar mercadería a otros países, ¿cuáles pensás que son los productos que más se exportan con este medio de transporte? Opciones: Alimentos perecederos de mucho valor – Cereales - Máquinas. Respuesta correcta: alimentos perecederos de mucho valor.
+""",
+"""
+Pregunta: La carne pampeana fresca tiene que estar en las góndolas de Europa en 96 hs, ¿en qué medio de transporte la llevarías? Opciones: Buque - Camión - Avión. Respuesta correcta: avión.
+""",
+"""
+Pregunta: Algunas mercaderías van en barco a otros países, ¿cuánto tarda aproximadamente en llegar desde el puerto en Bs As a Hong Kong? Opciones: 30 días - 80 días - 50 días. Respuesta correcta: 50 días.
+""",
+"""
+Pregunta: Existen puertos para que los buques puedan cargar la mercadería que va a otros países ¿Cuántos de estos hay en Argentina? Opciones: 15 – 24 – 33. Respuesta correcta: 24.
+""",
+"""
+Pregunta: ¿Puedo exportar mercadería suelta o sólo en cajas? Opciones: Puede ser suelta - Sólo en cajas. Respuesta correcta: puede ser suelta.
+""",
+"""
+Pregunta: ¿Qué información tienen que tener las cajas de cartón para exportación Opciones: Datos de la empresa – Datos de la empresa y de la mercadería – Datos de la empresa, mercadería e instrucciones de manipuleo. Respuesta correcta: Datos de la empresa, mercadería e instrucciones de manipuleo.
+""",
+"""
+Pregunta: Para transportar un gran volumen de mercadería se usan contenedores, ¿dónde se puede cargar? Opciones: Sólo en la empresa - Sólo en puertos – Ambas. Respuesta correcta: ambas.
+""",
+"""
+Pregunta: Argentina es uno de los principales exportadores de miel a granel que se comercializa en tambores. Cada país tiene tambores de determinado color, ¿de qué color son los de Argentina? Opciones: Marrones – Amarillos – Azules. Respuesta correcta: marrones.
+""",
+"""
+Pregunta: ¿Qué certificación es necesaria para transportar alimentos y bebidas dentro del país? Opciones: Tarjeta de habilitación de transporte – Solo licencia de conducir – Habilitación MERCOSUR de transporte alimenticio. Respuesta correcta: Tarjeta de habilitación de transporte.
+""",
+"""
+Pregunta: Para exportar productos existen reglas y requisitos, ¿dónde es necesario estar inscripto para comercializar alimentos y bebidas fuera del país Opciones: INTI (Instituto Nacional de Tecnología Industrial) - SENASA – Aduana. Respuesta correcta: SENASA.
+""",
+"""
+Pregunta: ¿Es necesario estar inscripto en Aduana para exportar servicios? Opciones: Si – No. Respuesta correcta: no.
+""",
+"""
+Pregunta: ¿Cuáles de estos productos NO se exporta desde la provincia de La Pampa? Opciones: Alfajores – Controles para riego – Servicios de Consultoría a Pymes y Organizaciones. Respuesta correcta: alfajores.
+""",
+"""
+Pregunta: La Pampa es una de las principales provincias productoras y desde donde se exporta miel, ¿se vende en envases pequeños o en tambores? Opciones: Envases pequeños - Tambores – Ninguna de las anteriores. Respuesta correcta: tambores.
+""",
+"""
+Pregunta: Hay sal pampeana que se está comercializando en Brasil, ¿qué tipo de adaptación pensás que le hicieron a este producto para ese mercado? Opciones: Cambio el sabor – Cambio el color y el idioma de la etiqueta - Sólo cambio el color de la etiqueta. Respuesta correcta: Cambio el color y el idioma de la etiqueta.
+""",
+"""
+Pregunta: ¿Las exportaciones de servicios pagan derechos de exportación? Opciones: Verdadero, Falso. Respuesta correcta: falso.
+""",
+"""
+Pregunta: La Pampa es una de las principales provincias productoras y desde donde se exportan granos, ¿cómo pensás que se venden? Opciones: Cajas – Tambores – A granel. Respuesta correcta: a granel.
+""",
+"""
+Pregunta: Hay vinos pampeanos que se están comercializando en Brasil, ¿qué tipo de adaptación pensás que le hicieron a este producto para ese mercado? Opciones: Cambio el sabor – Etiquetas en portugués - Botellas de plástico. Respuesta correcta: Etiquetas en portugués.
+""",
+"""
+Pregunta: La Pampa es una de las principales provincias productoras y exportadoras de miel. Japón es uno de los países que compra miel pampeana, ¿qué coloración de miel prefieren los japoneses? Opciones: Bien clara – Media – Oscura. Respuesta correcta: bien clara.
+""",
+"""
+Pregunta: Existe un listado de las empresas pampeanas que exportan o pueden exportar que tiene como nombre las siglas O.E. ¿Qué significan? Opciones: Organización Empresarial – Oferta Exportable – Organismo Exportador. Respuesta correcta: Oferta Exportable.
+""",
+"""
+Pregunta: Desde La Pampa se venden productos a muchos países alrededor del mundo, ¿a cuántos países se exporta? Opciones: 27 – 50 – 73. Respuesta correcta: 50.
+""",
+"""
+Pregunta: Las ferias son herramientas que sirven para que las empresas den a conocer sus productos y servicios en el exterior, y hay de muchos tipos. ¿En qué país se realiza la feria más grande y con más trayectoria de Latinoamérica que se llama Expocruz? Opciones: Argentina – Brasil – Bolivia. Respuesta correcta: Bolivia.
+""",
+"""
+Pregunta: Las ferias son herramientas que sirven para que las empresas den a conocer sus productos y servicios en el exterior, y hay de muchos tipos. ¿Este año empresas de la pampa junto a la agencia participaran de la feria APAS 2023 ¿En dónde se realizó? Opciones: San Pablo, Brasil - Bahía Blanca, Argentina – Ciudad de Guatemala, Guatemala. Respuesta correcta: San Pablo, Brasil.
+""",
+"""
+Pregunta: Las ferias son herramientas que sirven para que las empresas den a conocer sus productos y servicios en el exterior, y hay de muchos tipos, algunas son de rubros específicos y otras más generales. La feria Superbahia es de un rubro especifico ¿De cuál? Opciones: Servicios – Alimentos – Indumentaria. Respuesta correcta: Alimentos.
+""",
+"""
+Pregunta: Las ferias son herramientas que sirven para que las empresas den a conocer sus productos y servicios en el exterior, y hay de muchos tipos, algunas son de rubros específicos y otras más generales. La feria Emerge es de un rubro especifico ¿De cuál? Opciones: Servicios – Alimentos – Indumentaria. Respuesta correcta: servicios.
+""",
+"""
+Pregunta: Las ferias son herramientas que sirven para que las empresas den a conocer sus productos y servicios en el exterior, y hay de muchos tipos, algunas son de rubros específicos y otras más generales. ¿Dónde fue la primera feria de la que participó la Agencia junto a empresas pampeanas? Opciones: Miami, EE.UU – Montevideo, Uruguay – Brasilia, Brasil. Respuesta correcta: Miami, EE.UU.
+""",
+"""
+Pregunta: Los países firman distintos acuerdos con el objetivo de promover entre ellos el comercio. Uno de ellos es el Mercosur ¿Qué países son miembros de este? Opciones: Argentina, Brasil y Uruguay – Argentina, Brasil, Chile y Bolivia – Argentina, Brasil, Uruguay y Paraguay. Respuesta correcta: Argentina, Brasil, Uruguay y Paraguay.
+""",
+"""
+Pregunta: ¿Dónde se encuentra ubicada estratégicamente La Pampa? Opciones: Al norte de Argentina, Al este de Buenos Aires, En el centro del país, en la puerta de acceso a la patagonia, En el extremo oeste del país. Respuesta correcta: En el centro del país, en la puerta de acceso a la patagonia.
+""",
+"""
+Pregunta: ¿Qué región de La Pampa es conocida por su producción de granos y pasturas? Opciones: El espinal, El monte, La estepa, El valle central. Respuesta correcta: La estepa.
+""",
+"""
+Pregunta: ¿Qué recurso hídrico es clave para la producción de agricultura y energía en La Pampa? Opciones: Río Negro, Río Colorado, Río Paraná, Río Salado. Respuesta correcta: Río Colorado.
+""",
+"""
+Pregunta: ¿Cuál es el cultivo más producido dentro de los cultivos de cosecha gruesa en La Pampa? Opciones: Trigo, Maíz, Girasol, Soja. Respuesta correcta: Maíz.
+""",
+"""
+Pregunta: ¿Dónde se encuentra ubicada estratégicamente La Pampa? Opciones: Al norte de Argentina, Al este de Buenos Aires, En el centro del país, en la puerta de acceso a la patagonia, En el extremo oeste del país. Respuesta correcta: En el centro del país, en la puerta de acceso a la patagonia.
+""",
+"""
+Pregunta: ¿Qué región de La Pampa es conocida por su producción de granos y pasturas? Opciones: El espinal, El monte, La estepa, El valle central. Respuesta correcta: La estepa.
+""",
+"""
+Pregunta: ¿Qué recurso hídrico es clave para la producción de agricultura y energía en La Pampa? Opciones: Río Negro, Río Colorado, Río Paraná, Río Salado. Respuesta correcta: Río Colorado.
+""",
+"""
+Pregunta: ¿Cuál es el cultivo más producido dentro de los cultivos de cosecha gruesa en La Pampa? Opciones: Trigo, Maíz, Girasol, Soja. Respuesta correcta: Maíz.
+""",
+"""
+Pregunta: ¿Qué hace especial al embalse Casa de Piedra? Opciones: Es el más grande del país, Permite regar tierras áridas y volverlas aptas para producir y generar energía eléctrica, Es exclusivamente turístico, Está en el noreste de La Pampa. Respuesta correcta: Permite regar tierras áridas y volverlas aptas para producir y generar energía eléctrica.
+""",
+"""
+Pregunta: ¿Qué lugar ocupa La Pampa en producción de carne bovina en Argentina? Opciones: Primera, Segunda, Quinta, Décima. Respuesta correcta: Quinta.
+""",
+"""
+Pregunta: ¿Qué porcentaje del total de ganado bovino nacional tiene La Pampa? Opciones: 2%, 6%, 10%, 15%. Respuesta correcta: 6%.
+""",
+"""
+Pregunta: ¿Qué es lo que destaca del turismo de aventura en La Pampa? Opciones: Balnearios masivos, Tradiciones urbanas, Ambientes silvestres y contacto con la naturaleza, Centros comerciales. Respuesta correcta: Ambientes silvestres y contacto con la naturaleza.
+""",
+"""
+Pregunta: ¿Qué herramienta promueve la radicación de inversiones en La Pampa? Opciones: Subsidios a empleados, Zona Franca General Pico, Centros turísticos, Créditos internacionales. Respuesta correcta: Zona Franca General Pico.
+""",
+"""
+Pregunta: ¿Qué se cultiva en las áreas bajo riego del Río Colorado? Opciones: Olivos y frutos secos, Soja y trigo, Flores y algodón, Hierbas medicinales. Respuesta correcta: Olivos y frutos secos.
+""",
+"""
+Pregunta: ¿Qué universidad tiene un papel clave en la formación educativa de La Pampa? Opciones: Universidad de Buenos Aires, Universidad Nacional de La Pampa, Universidad de Córdoba, Universidad Nacional de Cuyo. Respuesta correcta: Universidad Nacional de La Pampa.
+""",
+"""
+Pregunta: ¿Qué sector representa una oportunidad de inversión en Casa de Piedra? Opciones: Minería, Producción de pistachos y vino, Construcción de viviendas, Ganadería de ovinos. Respuesta correcta: Producción de pistachos y vino.
+""",
+"""
+Pregunta: ¿Qué cultivo predomina en la cosecha fina de La Pampa? Opciones: Maíz, Trigo, Soja, Girasol. Respuesta correcta: Trigo.
+""",
+"""
+Pregunta: ¿Qué posición ocupa La Pampa en la producción de petróleo en Argentina? Opciones: Sexta, Primera, Décima, Segunda. Respuesta correcta: Sexta.
+""",
+"""
+Pregunta: ¿Qué recurso natural se utiliza en Casa de Piedra para generar energía eléctrica? Opciones: Gas natural, Energía solar, Un embalse, Carbón. Respuesta correcta: Un embalse.
+""",
+"""
+Pregunta: ¿Qué producto es el más exportado del sector agroindustrial de La Pampa? Opciones: Aceite de girasol, Harina de trigo, Carne bovina, Vino. Respuesta correcta: Carne bovina.
+""",
+"""
+Pregunta: ¿Cuál es una de las principales actividades turísticas en La Pampa? Opciones: Turismo de aventura en la montaña, Pesca en el océano, Caza deportiva, Buceo. Respuesta correcta: Caza deportiva.
+""",
+"""
+Pregunta: ¿Qué herramienta utiliza La Pampa para fomentar inversiones privadas en la provincia? Opciones: Ley de Incentivos Fiscales, Subsidios a la agricultura, Descuento en el pago de servicios básicos, Créditos internacionales. Respuesta correcta: Ley de Incentivos Fiscales.
+""",
+"""
+Pregunta: ¿Qué producto se destaca en la región bajo riego de Casa de Piedra? Opciones: Manzanas, Pistachos, Café, Algodón. Respuesta correcta: Pistachos.
+""",
+"""
+Pregunta: ¿Cuántas localidades de La Pampa cuentan con parques industriales? Opciones: 5, 12, 22, 30. Respuesta correcta: 22.
+""",
+"""
+Pregunta: ¿Cuál es el principal destino de los recursos del embalse Casa de Piedra? Opciones: Turismo, Generación de energía y riego, Pesca comercial, Producción de carbón. Respuesta correcta: Generación de energía y riego.
+""",
+"""
+Pregunta: ¿Qué ciudad de La Pampa albergará un parque solar que suministrará energía para 9,000 hogares? Opciones: Santa Rosa, General Pico, 25 de Mayo, Casa de Piedra. Respuesta correcta: General Pico.
+""",
+"""
+Pregunta: ¿Qué cultivo de frutos secos está creciendo en las áreas bajo riego de La Pampa? Opciones: Nueces, Almendras, Pistachos, Todos los anteriores. Respuesta correcta: Todos los anteriores.
+""",
+"""
+Pregunta: ¿Cuál es una de las principales actividades turísticas en La Pampa? Opciones: Turismo de aventura en la montaña, Pesca en el océano, Caza deportiva, Buceo. Respuesta correcta: Caza deportiva.
+""",
+"""
+Pregunta: ¿Qué herramienta utiliza La Pampa para fomentar inversiones privadas en la provincia? Opciones: Ley de Incentivos Fiscales, Subsidios a la agricultura, Descuento en el pago de servicios básicos, Créditos internacionales. Respuesta correcta: Ley de Incentivos Fiscales.
+""",
+"""
+Pregunta: ¿Qué producto se destaca en la región bajo riego de Casa de Piedra? Opciones: Manzanas, Pistachos, Café, Algodón. Respuesta correcta: Pistachos.
+""",
+"""
+Pregunta: ¿Cuántas localidades de La Pampa cuentan con parques industriales? Opciones: 5, 12, 22, 30. Respuesta correcta: 22.
+""",
+"""
+Pregunta: ¿Cuál es el principal destino de los recursos del embalse Casa de Piedra? Opciones: Turismo, Generación de energía y riego, Pesca comercial, Producción de carbón. Respuesta correcta: Generación de energía y riego.
+""",
+"""
+Pregunta: ¿Qué ciudad de La Pampa albergará un parque solar que suministrará energía para 9,000 hogares? Opciones: Santa Rosa, General Pico, 25 de Mayo, Casa de Piedra. Respuesta correcta: General Pico.
+""",
+"""
+Pregunta: ¿Qué cultivo de frutos secos está creciendo en las áreas bajo riego de La Pampa? Opciones: Nueces, Almendras, Pistachos, Todos los anteriores. Respuesta correcta: Todos los anteriores.
+""",
+"""
+Pregunta: ¿Cuál es el principal hidrocarburo producido en La Pampa? Opciones: Carbón, Gas natural, Petróleo, Gas licuado. Respuesta correcta: Petróleo.
+""",
+"""
+Pregunta: ¿Qué ley provincial promueve las inversiones privadas en La Pampa? Opciones: Ley de Fomento Agrario, Ley de Incentivos Fiscales, Ley de Protección de Recursos Naturales, Ley de Conectividad. Respuesta correcta: Ley de Incentivos Fiscales.
+""",
+"""
+Pregunta: ¿Qué porcentaje de la producción nacional de carne bovina proviene de La Pampa? Opciones: 2%, 5%, 10%, 20%. Respuesta correcta: 5%.
+""",
+"""
+Pregunta: ¿Qué herramienta financiera facilita el acceso a créditos a pequeñas empresas en La Pampa? Opciones: Fondo de Garantías Público Provincial, Banco de Inversiones Nacional, Microcréditos La Pampa, Subsidios Federales. Respuesta correcta: Fondo de Garantías Provincial.
+""",
+"""
+Pregunta: ¿Qué institución educativa tiene más de 60 años de trayectoria en La Pampa? Opciones: Universidad de Santa Rosa, Universidad Nacional de La Pampa, Instituto Pampeano de Estudios Avanzados, Colegio Mayor Pampa. Respuesta correcta: Universidad Nacional de La Pampa.
+""",
+"""
+Pregunta: ¿En qué localidad se producen los vinos pampeanos de calidad internacional? Opciones: Santa Rosa, 25 de Mayo, Casa de Piedra, General Pico. Respuesta correcta: Casa de Piedra.
+""",
+"""
+Pregunta: ¿Qué recurso energético renovable se está desarrollando en General Pico? Opciones: Energía eólica, Energía solar, Energía geotérmica, Biomasa. Respuesta correcta: Energía solar.
+""",
+"""
+Pregunta: ¿Qué ciudad cuenta con dos parques industriales en La Pampa? Opciones: Santa Rosa, General Pico, 25 de Mayo, Todas las anteriores. Respuesta correcta: Todas las anteriores.
+""",
+"""
+Pregunta: ¿Qué ventaja ofrece la Zona Franca de General Pico a las empresas? Opciones: Acceso limitado al mercado interno, Exención de impuestos locales y nacionales, Restricciones para importar materias primas, No hay beneficios fiscales. Respuesta correcta: Exención de impuestos locales y nacionales.
+""",
+"""
+Pregunta: ¿Qué producción de carne bovina alcanzó La Pampa en el año 2023? Opciones: 250,000 cabezas de ganado, 501,736 cabezas de ganado, 1,000,000 cabezas de ganado, 100,000 cabezas de ganado. Respuesta correcta: 501,736 cabezas de ganado.
+""",
+"""
+Pregunta: ¿Qué tipo de aceites se producen en La Pampa? Opciones: Aceite de oliva, Aceite de girasol, Aceite de maní, Aceite de coco. Respuesta correcta: Aceite de girasol.
+""",
+"""
+Pregunta: ¿Qué ley provincial promueve las inversiones en La Pampa? Opciones: Ley de Incentivos Agrícolas, Ley de Incentivos Fiscales, Ley de Protección Ambiental, Ley de Desarrollo Industrial. Respuesta correcta: Ley de Incentivos Fiscales.
+""",
+"""
+Pregunta: ¿Qué institución financiera ofrece créditos a tasas subsidiadas en La Pampa para el desarrollo de actividades económicas estratégicas? Opciones: Banco de La Pampa, Banco Central, Banco Nación, Banco Mundial. Respuesta correcta: Banco de La Pampa.
+"""

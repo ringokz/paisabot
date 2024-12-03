@@ -171,9 +171,8 @@ def select_mito_realidad():
 def select_trivia():
     st.session_state.selected_topic = "Trivia"
     st.session_state.initial_message = (
-        "¡Hola! Soy PaisaBot 😊."
-        "Así que querés jugar a la Trivia. Es muy fácil, te voy a hacer una **pregunta con opciones y tendrás que adivinar la opción correcta**."
-        "¿Comenzamos?"
+    "¡Hola! Soy PaisaBot 😊. "
+    "Juguemos a la trivia, es fácil: te haré una **pregunta con opciones y deberás adivinar la correcta**. Tendrás 5 oportunidades, así que piensa bien. Decime tu nombre para comenzar, ¿te parece?"
     )
     st.session_state.initial_message_shown = False
 

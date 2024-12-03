@@ -175,6 +175,7 @@ def load_instructions(topic):
     # Definir el directorio base para instrucciones
     instructions_dir = Path(__file__).parent / "instructions"
     mito_realidad_file = Path(__file__).parent / "mito_realidad.txt"
+    trivia_file = Path(__file__).parent / "trivia.txt"
 
     # Diccionario de archivos de instrucciones
     INSTRUCTIONS_FILES = {
@@ -212,12 +213,37 @@ def load_instructions(topic):
             # Combinar el contenido base con las afirmaciones seleccionadas
             return f"{base_content}\n\n{additional_content}"
 
-        # Si no es "Mito o realidad", devolver solo el contenido base
+        # Si el modo es "Trivia", agregar preguntas aleatorias
+        elif topic == "Trivia":
+            # Leer todas las preguntas de trivia.txt
+            with open(trivia_file, "r", encoding="utf-8") as trivia_file:
+                all_questions = [
+                    question.strip()
+                    for question in trivia_file.read().split('""",\n"""')
+                ]  # Separar por bloques de texto
+
+            # Determinar cuántas preguntas seleccionar (máximo 5 o el total disponible)
+            num_questions = min(5, len(all_questions))
+
+            # Seleccionar preguntas aleatorias
+            selected_questions = random.sample(all_questions, num_questions)
+
+            # Crear un formato para las preguntas seleccionadas
+            additional_content = "# Trivia\n\n"
+            additional_content += "\n\n".join(
+                [f"{i+1}. {question.strip()}" for i, question in enumerate(selected_questions)]
+            )
+
+            # Combinar el contenido base con las preguntas seleccionadas
+            return f"{base_content}\n\n{additional_content}"
+
+        # Si no es "Mito o realidad" ni "Trivia", devolver solo el contenido base
         return base_content
 
     except FileNotFoundError as e:
         st.error(f"Error al cargar las instrucciones para {topic}: {e}")
         return None
+
 
 # # Function to load instructions
 # def load_instructions(topic):
