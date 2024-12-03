@@ -174,6 +174,7 @@ def clean_message_for_audio(message_content):
 def load_instructions(topic):
     # Definir el directorio base para instrucciones
     instructions_dir = Path(__file__).parent / "instructions"
+    mito_realidad_file = Path(__file__).parent / "mito_realidad.txt"
 
     # Diccionario de archivos de instrucciones
     INSTRUCTIONS_FILES = {
@@ -183,23 +184,39 @@ def load_instructions(topic):
     }
 
     try:
-        # Si es "Mito o realidad", generar o leer el archivo .txt
+        # Leer el contenido base de instrucciones
+        with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as base_file:
+            base_content = base_file.read().strip()
+
+        # Si el modo es "Mito o realidad", agregar afirmaciones aleatorias
         if topic == "Mito o realidad":
-            mito_file = Path(__file__).parent / "mito_realidad.txt"
-            
-            # Verificar si el archivo ya existe
-            if not mito_file.exists():
-                generate_mito_realidad_file(mito_realidad_texts, filename="mito_realidad.txt")
-            
-            # Leer el archivo generado
-            with open(mito_file, "r", encoding="utf-8") as file:
-                return file.read().strip()
-        
-        # Leer el archivo para otros temas
-        with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as file:
-            return file.read().strip()
-    except FileNotFoundError:
-        st.error(f"No se encontró el archivo de instrucciones para {topic}. Verifica el repositorio y la carpeta.")
+            # Leer todas las afirmaciones de mito_realidad.txt
+            with open(mito_realidad_file, "r", encoding="utf-8") as mito_file:
+                all_statements = [
+                    statement.strip()
+                    for statement in mito_file.read().split('""",\n"""')
+                ]  # Separar por bloques de texto
+
+            # Determinar cuántas afirmaciones seleccionar (máximo 5 o el total disponible)
+            num_statements = min(5, len(all_statements))
+
+            # Seleccionar afirmaciones aleatorias
+            selected_statements = random.sample(all_statements, num_statements)
+
+            # Crear un formato para las afirmaciones seleccionadas
+            additional_content = "# Mito o realidad\n\n"
+            additional_content += "\n\n".join(
+                [f"{i+1}. {statement.strip()}" for i, statement in enumerate(selected_statements)]
+            )
+
+            # Combinar el contenido base con las afirmaciones seleccionadas
+            return f"{base_content}\n\n{additional_content}"
+
+        # Si no es "Mito o realidad", devolver solo el contenido base
+        return base_content
+
+    except FileNotFoundError as e:
+        st.error(f"Error al cargar las instrucciones para {topic}: {e}")
         return None
 
 # # Function to load instructions
