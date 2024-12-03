@@ -1,8 +1,6 @@
 import streamlit as st
 import time
 
-
-
 # Paleta de colores y rutas de los logos
 PRIMARY_COLOR = "#4b83c0"
 SECONDARY_COLOR = "#878889"

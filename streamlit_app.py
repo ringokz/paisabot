@@ -337,7 +337,7 @@ if st.session_state.selected_topic:
     TOPIC_CONFIG = {
         "Mito o realidad": {
             "model": "gpt-4o-mini",
-            "temperature": 0.1,
+            "temperature": 0.3,
             "frequency_penalty": -0.5,
             "presence_penalty": -0.5,
         },
