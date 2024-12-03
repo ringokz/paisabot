@@ -163,7 +163,7 @@ def render_intro():
 def select_mito_realidad():
     st.session_state.selected_topic = "Mito o realidad"
     st.session_state.initial_message = (
-        "¡Hola! Soy PaisaBot 😊, juguemos a 'Mito o realidad'. "
+        "¡Hola! Soy PaisaBot 😊. "
         "Te voy a mostrar una afirmación o pregunta relacionada a la economía pampeana y me dirás si es **Mito** o **Realidad**. "
         "Pensá con cuidado porque haremos solo 5 rondas. "
         "Decime cómo te llamás y comencemos, ¿dale?"
