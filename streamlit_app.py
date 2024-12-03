@@ -10,6 +10,8 @@ from pydub import AudioSegment
 import random
 from pathlib import Path
 import os
+import random
+
 
 # Configuración de la página
 PRIMARY_COLOR = "#4b83c0"
@@ -51,6 +53,24 @@ background_tracks = [
     {"path": "instrumentales/milonga_payada_1.mp3", "total_duration": 125, "intro_duration": 1},
     {"path": "instrumentales/milonga_payada_2.mp3", "total_duration": 53, "intro_duration": 1},
 ]
+
+def generate_mito_realidad_file(statements, filename="mito_realidad.txt", num=5):
+    """
+    Genera un archivo .txt con afirmaciones seleccionadas aleatoriamente.
+    """
+    # Seleccionar afirmaciones aleatorias
+    selected_statements = random.sample(statements, num)
+    header = "# Mito o realidad\n\n"
+    content = header + "\n\n".join(selected_statements)
+    
+    # Definir la ruta del archivo
+    file_path = Path(__file__).parent / filename
+    
+    # Escribir el contenido en el archivo
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write(content)
+    
+    return file_path
 
 def combine_audio_with_background(voice_path):
     """
@@ -133,6 +153,24 @@ def clean_message_for_audio(message_content):
     message_content = re.sub(r'<break time="1s" />$', '.', message_content)    
     return message_content
 
+# def load_instructions(topic):
+#     # Definir el directorio base para instrucciones
+#     instructions_dir = Path(__file__).parent / "instructions"
+
+#     # Diccionario de archivos de instrucciones
+#     INSTRUCTIONS_FILES = {
+#         "Mito o realidad": instructions_dir / "instructions_mito_realidad.txt",
+#         "Trivia": instructions_dir / "instructions_trivia.txt",
+#         "Payador con IA": instructions_dir / "instructions_payador.txt",
+#     }
+
+#     try:
+#         with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as file:
+#             return file.read().strip()
+#     except FileNotFoundError:
+#         st.error(f"No se encontró el archivo de instrucciones para {topic}. Verifica el repositorio y la carpeta.")
+#         return None
+
 def load_instructions(topic):
     # Definir el directorio base para instrucciones
     instructions_dir = Path(__file__).parent / "instructions"
@@ -145,6 +183,19 @@ def load_instructions(topic):
     }
 
     try:
+        # Si es "Mito o realidad", generar o leer el archivo .txt
+        if topic == "Mito o realidad":
+            mito_file = Path(__file__).parent / "mito_realidad.txt"
+            
+            # Verificar si el archivo ya existe
+            if not mito_file.exists():
+                generate_mito_realidad_file(mito_realidad_texts, filename="mito_realidad.txt")
+            
+            # Leer el archivo generado
+            with open(mito_file, "r", encoding="utf-8") as file:
+                return file.read().strip()
+        
+        # Leer el archivo para otros temas
         with open(INSTRUCTIONS_FILES[topic], "r", encoding="utf-8") as file:
             return file.read().strip()
     except FileNotFoundError:
@@ -251,20 +302,87 @@ if st.session_state.selected_topic:
                 frontend.render_chat_message(message["role"], message["content"],
                                              avatar=paisa_logo if message["role"] == "assistant" else user_logo)
 
-    # Renderizar el campo de entrada
+    # # Renderizar el campo de entrada
+    # if prompt := frontend.render_input():
+    #     st.session_state.messages.append({"role": "user", "content": prompt})
+    #     frontend.render_chat_message("user", prompt, avatar=user_logo)
+
+    #     client = OpenAI(api_key=st.secrets["openai"]["api_key"])
+    #     response = client.chat.completions.create(
+    #         model="gpt-4o-mini",
+    #         messages=st.session_state.messages,
+    #         temperature=0.5,                    
+    #         frequency_penalty=0, 
+    #         presence_penalty=-1   
+    #     )
+
+    #     response_content = response.choices[0].message.content
+    #     response_message = {"role": "assistant", "content": response_content}
+    #     st.session_state.messages.append(response_message)
+
+    #     # Renderizar el mensaje del chatbot
+    #     frontend.render_dynamic_message(response_message, avatar=paisa_logo)
+    #     st.session_state.rendered_message_ids.add(f"assistant-{len(st.session_state.messages) - 1}")
+
+    #     # Limpiar el texto antes de enviarlo a Eleven Labs
+    #     texto_limpio = clean_message_for_audio(response_content)
+    #     # Generar el audio de la voz
+    #     audio_path = generar_audio_elevenlabs_sdk(texto_limpio)
+    #     if audio_path:
+    #         # Combinar con música de fondo
+    #         final_audio_path = combine_audio_with_background(audio_path)
+    #         if final_audio_path:
+    #             st.audio(final_audio_path, format="audio/mp3")
+    # Configuración de los parámetros de OpenAI por modo
+    TOPIC_CONFIG = {
+        "Mito o realidad": {
+            "model": "gpt-4o-mini",
+            "temperature": 0.1,
+            "frequency_penalty": -0.5,
+            "presence_penalty": -0.5,
+        },
+        "Trivia": {
+            "model": "gpt-4o-mini",
+            "temperature": 0.1,
+            "frequency_penalty": -0.5,
+            "presence_penalty": -0.5,
+        },
+        "Payador con IA": {
+            "model": "gpt-4o-mini",
+            "temperature": 0.5,
+            "frequency_penalty": 0,
+            "presence_penalty": -1,
+        },
+        "default": {
+            "model": "gpt-4o-mini",
+            "temperature": 0.5,
+            "frequency_penalty": 0,
+            "presence_penalty": -1,
+        },
+    }
+    # Verificar el modo seleccionado para obtener la configuración
+    selected_topic = st.session_state.selected_topic
+    if selected_topic in TOPIC_CONFIG:
+        config = TOPIC_CONFIG[selected_topic]
+    else:
+        config = TOPIC_CONFIG["default"]
+
+    # Renderizar el campo de entrada y procesar la respuesta
     if prompt := frontend.render_input():
         st.session_state.messages.append({"role": "user", "content": prompt})
         frontend.render_chat_message("user", prompt, avatar=user_logo)
 
+        # Llamada al API de OpenAI con la configuración seleccionada
         client = OpenAI(api_key=st.secrets["openai"]["api_key"])
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=config["model"],
             messages=st.session_state.messages,
-            temperature=0.5,                    
-            frequency_penalty=0, 
-            presence_penalty=-1   
+            temperature=config["temperature"],
+            frequency_penalty=config["frequency_penalty"],
+            presence_penalty=config["presence_penalty"],
         )
 
+        # Extraer el contenido de la respuesta
         response_content = response.choices[0].message.content
         response_message = {"role": "assistant", "content": response_content}
         st.session_state.messages.append(response_message)
@@ -273,12 +391,11 @@ if st.session_state.selected_topic:
         frontend.render_dynamic_message(response_message, avatar=paisa_logo)
         st.session_state.rendered_message_ids.add(f"assistant-{len(st.session_state.messages) - 1}")
 
-        # Limpiar el texto antes de enviarlo a Eleven Labs
-        texto_limpio = clean_message_for_audio(response_content)
-        # Generar el audio de la voz
-        audio_path = generar_audio_elevenlabs_sdk(texto_limpio)
-        if audio_path:
-            # Combinar con música de fondo
-            final_audio_path = combine_audio_with_background(audio_path)
-            if final_audio_path:
-                st.audio(final_audio_path, format="audio/mp3")
+        # Generar y reproducir audio solo si está en el modo "Payador con IA"
+        if selected_topic == "Payador con IA":
+            texto_limpio = clean_message_for_audio(response_content)
+            audio_path = generar_audio_elevenlabs_sdk(texto_limpio)
+            if audio_path:
+                final_audio_path = combine_audio_with_background(audio_path)
+                if final_audio_path:
+                    st.audio(final_audio_path, format="audio/mp3")
