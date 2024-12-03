@@ -123,7 +123,7 @@ def render_intro():
     st.markdown(
         """
         <div class="intro-text">
-        Soy <b>PaisaBot</b>, el asesora virtual de IA de la Agencia I-COMEX. Conozcamos más sobre comercio exterior e inversiones en La Pampa jugando.<br><br>
+        Soy <b>PaisaBot</b>, el asesor virtual de IA de la Agencia I-COMEX. Conozcamos más sobre comercio exterior e inversiones en La Pampa jugando.<br><br>
         </div>
         <div class="intro-question">
         Elegí un modo de interacción
