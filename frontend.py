@@ -137,7 +137,7 @@ def render_intro():
     btn_col1, btn_col2, btn_col3 = st.columns(3, gap="medium")
     with btn_col1:
         st.button(
-            "**Mito o Realidad ❓🤔**",
+            "**Mito o Realidad 🤔❓**",
             key="intro_mito_realidad",
             on_click=select_mito_realidad,  # Conecta el callback
             use_container_width=True,

@@ -1,120 +1,120 @@
 """
-**¿Es verdad que en La Pampa sólo se genera empleo público?**
+**¿Es correcto afirmar que el sector público es el sector económico con mayor peso en la generación de empleo dentro del aglomerado Santa Rosa - Toay?**
 Respuesta: FALSO.
 Justificación: Según los datos de la **Encuesta Permanente de Hogares de INDEC**, durante los últimos tres años, el **70,56%** del empleo del aglomerado Santa Rosa - Toay provino de **fuentes privadas**, mientras que el **29,44%** restante corresponde a **empleo de provisión pública**.
 """,
 """
-**¿Es La Pampa una provincia sin industria, que sólo se dedica a la producción de bienes primarios?**
+**¿Se puede afirmar que la provincia de La Pampa carece de desarrollo industrial y que su economía se centra exclusivamente en la producción de bienes primarios?**
 Respuesta: FALSO.
 Justificación: Según los datos de la **Secretaría de Trabajo, Empleo y Seguridad Social de la Nación**, durante el año 2022, se registraron **7.033 industrias generadoras de empleo privado registrado** dentro del territorio pampeano. A su vez, todos los parques industriales de La Pampa son de carácter público. La provincia de La Pampa cuenta con **22 localidades con parques industriales consolidados** (con al menos 3 empresas radicadas), en operación y se encuentran ampliando infraestructura y servicios disponibles. A su vez, las localidades de Santa Rosa, 25 de Mayo y General Pico cuentan con dos parques industriales cada una.
 """,
 """
-**¿Es verdad que La Pampa no genera empleo privado registrado?**
+**¿¿Es correcto afirmar que en La Pampa no se genera empleo formal en el sector privado de forma significativa??**
 Respuesta: FALSO.
 Justificación: Según los datos de la **Secretaría de Trabajo, Empleo y Seguridad Social de la Nación**, durante el mes de noviembre de 2023, la provincia de La Pampa tuvo su récord histórico en la serie de empleo privado registrado con **41.203 empleos registrados** en el sector privado pampeano, dato más alto desde enero de 2009.
 """,
 """
-**El sector agropecuario pampeano es el único sector que genera empleo privado registrado en la provincia.**
+**¿Es correcto afirmar que ningún otro sector, además del agropecuario pampeano, genera empleo privado registrado en la provincia?**
 Respuesta: FALSO.
 Justificación: Según los datos publicados por la **Secretaría de Trabajo, Empleo y Seguridad Social de la Nación**, los sectores económicos que más empleo privado generaron durante el año 2023 fueron: **comercio al por menor y al por mayor (12.011 puestos de trabajo)**, **industria manufacturera (5.505 puestos de trabajo)**, **agricultura, ganadería, caza y silvicultura (4.676 puestos de trabajo)** y **construcción (4.113 puestos de trabajo)**.
 """,
 """
-**La generación de empleo por parte del sector primario se potencia en conjunto al sector agroindustria.**
+**¿Es verdadero que la integración del sector agroindustrial con el sector primario potencia significativamente la generación de empleo?.**
 Respuesta: VERDADERO.
 Justificación: Según los datos publicados por la **Secretaría de Trabajo, Empleo y Seguridad Social de la Nación**, durante el año 2023, el sector agropecuario primario generó **4.676 puestos de trabajo**, mientras que el sector agroindustrial pampeano generó **3.302 puestos de trabajo**. En conjunto, ello significó **7.978 empleos pampeanos** a través del agregado de valor a la producción primaria. He aquí la importancia del agregado de valor a la producción primaria pampeana para desarrollar y potenciar la generación de empleo y la diversificación de la matriz productiva pampeana.
 """,
 """
-**El sector agropecuario pampeano es el único que genera valor en la economía.**
+**¿El sector agropecuario de la región pampeana es, efectivamente, la única fuente de generación de valor en la economía?**
 Respuesta: FALSO.
 Justificación: Según los datos publicados por **CEPAL**, durante el año 2022 -último dato disponible-, el sector agropecuario generó sólo el **18,86%** del valor agregado de la provincia, ubicándose en segundo lugar luego de comercio mayorista y minorista que generó el **25,98%** del valor agregado pampeano total.
 """,
 """
-**La economía pampeana hace años que no crece.**
+**¿Podemos considerar como cierto que la economía pampeana no ha crecido significativamente en los últimos años?**
 Respuesta: FALSO.
 Justificación: ¿Sabías que, según los datos de **CEPAL**, La Pampa fue la sexta provincia del país que más creció en la agregación de valor en su economía durante el periodo 2004-2022? Según los últimos datos disponibles del año 2022, La Pampa fue la sexta provincia con mayor crecimiento en el **Valor Agregado Bruto** de todas las economías del país respecto al año 2004, al crecer un **67,43%** en 19 años.
 """,
 """
-**En La Pampa la actividad ganadera no está consolidada.**
-Respuesta: FALSO.
+**¿Podemos afirmar que la actividad ganadera es un sector consolidado en la estructura económica de la provincia de La Pampa?**
+Respuesta: VERDADERO.
 Justificación: Según los datos publicados por la **Secretaría de Agricultura, Ganadería y Pesca de la Nación**, durante el año 2023, La Pampa fue la sexta provincia del país con mayor cantidad de cabezas bovinas en su territorio, lo que representa un **6%** del total de ganado bovino del país, siendo en total **3.237.640 cabezas**, un **3,46% menos** respecto al año 2022.
 """,
 """
-**La Pampa es una provincia que sólo produce granos, cereales y ganado en pie.**
+**¿Es correcto afirmar que la actividad económica de La Pampa se limita exclusivamente a la producción de granos, cereales y ganado en pie?**
 Respuesta: FALSO.
 Justificación: Según los datos de **CEPAL 2022** -último dato disponible- sobre **Valor Agregado Bruto**, los sectores económicos con mayor dinamismo en la estructura productiva pampeana durante el año 2022 respecto al año 2021 fueron: **Hotelería (+56,54%)**, **fabricación de maquinarias y equipos eléctricos (+27,64%)**, **industria asociada al cuero (+26,37%)**, **restaurantes (+24,81%)** y **transporte (20,70%)**.
 """,
 """
-**El sector agroindustrial pampeano no es un sector consolidado.**
-Respuesta: FALSO.
+**¿El sector agroindustrial pampeano puede considerarse como un sector económico consolidado en el desarrollo económico pampeano?**
+Respuesta: VERDADERO.
 Justificación: El sector agroindustrial pampeano es uno de los principales sectores económicos de la estructura productiva pampeana. Durante el año 2023, se faenaron en La Pampa **501.376 cabezas de ganado bovino**, lo que la posicionó como la quinta provincia del país con mayor producción de carne bovina. Además, se ubicó como la cuarta provincia con mayor producción de aceites, al producir **80.800 toneladas**, y como la quinta provincia con mayor producción de harinas en territorio pampeano (**146.176 toneladas**), posicionando a la agroindustria pampeana en la matriz productiva nacional e internacional.
 """,
 """
-**La Pampa es una provincia que no tiene recursos naturales.**
-Respuesta: FALSO.
+**¿Es correcto decir que La Pampa es una provincia rica en recursos naturales y se destaca por su producción hidrocarburífera?**
+Respuesta: VERDADERO.
 Justificación: ¡Los pampeanos tenemos petróleo y gas, además de otros recursos naturales! Los hidrocarburos representan un sector consolidado dentro de la matriz productiva pampeana, dado que, en el año 2023, La Pampa fue la sexta provincia con mayor producción de petróleo del país, lo que significó una producción de **826.185 Tn**. Además, nos posicionamos como la novena provincia del país con mayor producción de gas natural, al producir **251.146 Tn** en el año 2023.
 """,
 """
-**La Pampa es una provincia que sólo exporta cereales, oleaginosas y carne bovina congelada.**
+**¿Es verdad que La Pampa se caracteriza exclusivamente por la exportación de cereales, oleaginosas y carne bovina congelada?**
 Respuesta: FALSO.
 Justificación: La Pampa no sólo exporta granos, cereales y carnes, ¡exportamos más de **52 productos y servicios** al mundo! La Pampa es una provincia que ofrece una diversidad de productos y servicios al mundo. Durante el año 2023, exportamos más de 52 productos y servicios a más de **65 países** de todo el mundo. Además de cereales, oleaginosas y carne bovina congelada, las manufacturas de yeso ocuparon el séptimo lugar en el ranking de productos pampeanos exportados durante el año 2023, además de la exportación de **abejas reinas (vivas)**, remolques y vinos, que se posicionaron en el puesto **21, 29 y 34** respectivamente.
 """,
 """
-**La Pampa es una provincia con bajos niveles de endeudamiento público, es una provincia ORDENADA en sus finanzas públicas.**
+**¿Se puede considerar verdadero que La Pampa mantiene bajos niveles de endeudamiento público como resultado de su administración financiera ordenada?**
 Respuesta: VERDADERO.
 Justificación: La Pampa es una provincia con finanzas públicas ordenadas y sin deuda pública provincial. Se caracteriza por ser una de las provincias del país que, históricamente, ha mantenido sus finanzas públicas provinciales en orden y con mejor performance en el manejo de su endeudamiento público. Durante el año 2023, la provincia de La Pampa compartió el primer y segundo puesto con la provincia de San Luis, como las provincias con menor stock de deuda pública por habitante del total de provincias del país. Además, desde junio 2024, asumió el compromiso de deuda pública cero. ¡Los pampeanos no tenemos deuda pública provincial!
 """,
 """
-**La Pampa es una provincia con crisis recurrentes en su economía.**
+**¿Podemos considerar que la economía pampeana atraviesa dificultades económicas recurrentes?**
 Respuesta: FALSO.
 Justificación: Desde el regreso de la democracia, La Pampa es una de las pocas provincias que, gracias a su situación fiscal ordenada, pudo pagar los sueldos de sus empleados en tiempo y forma a pesar de las crisis económicas nacionales que acontecieron en el periodo. Además, debido a los altos niveles de inflación, ha cambiado su actualización de paritarias por **IPC (Índice de Precios al Consumidor)**.
 """,
 """
-**La economía pampeana históricamente registró niveles altos de deuda pública para sostener la calidad de vida de todos los pampeanos.**
-Respuesta: FALSO.
+**¿Es cierto que la economía pampeana ha registrado históricamente bajos niveles de deuda pública como estrategia para garantizar la calidad de vida de sus habitantes?**
+Respuesta: VERDADERO.
 Justificación: El endeudamiento público provincial fue históricamente una variable cuidada en la economía pampeana. Desde el año 2010, la provincia de La Pampa siempre se mantuvo entre las primeras cuatro provincias de Argentina con menor stock de deuda pública provincial per cápita. Durante el periodo 2010-2012, se posicionó en cuarto lugar, mientras que en los años posteriores su posición osciló entre los primeros tres lugares del ranking.
 """,
 """
-**La Pampa es una de las provincias que, durante la crisis del 2001, recurrió a la emisión de cuasimonedas para solventar sus finanzas provinciales.**
+**¿Es correcto afirmar que la provincia de La Pampa emitió cuasimonedas durante la crisis económica del 2001 como medida de emergencia para equilibrar sus finanzas provinciales?**
 Respuesta: FALSO.
 Justificación: La Pampa fue una de las ocho provincias de Argentina que no emitió cuasimonedas durante la crisis de 2001. Durante la crisis socioeconómica que azotó a nuestro país en el año 2001, 15 provincias argentinas emitieron cuasimonedas propias para financiarse. Estas cuasimonedas eran bonos que sustituían los pesos en circulación para financiar pagos asumidos por las provincias emisoras. A diferencia de ello, la provincia de La Pampa fue una de las ocho provincias del país que no emitieron este tipo de bonos para solventar las finanzas públicas provinciales.
 """,
 """
-**La educación pública pampeana tiene altos niveles de deserción escolar.**
+**¿Podemos afirmar que los niveles de deserción escolar en la educación pampeana son elevados?.**
 Respuesta: FALSO.
 Justificación: Los pampeanos tienen altos niveles de educación. El último **Censo Nacional de Población, Hogares y Viviendas** realizado en el año 2022 por **INDEC** nos posicionó como la segunda provincia de argentina con mayor cantidad de población de 5 años o más con nivel primario de educación completo y como la tercera provincia con mayor cantidad de población mayor a 5 años o más con nivel universitario completo. ¡La educación es una variable clave en el desarrollo económico de todos los pampeanos y pampeanas!
 """,
 """
-**La Pampa es una provincia con altos niveles de inseguridad.**
+**¿Es verdad que La Pampa se caracteriza por ser una provincia con altos niveles de inseguridad?**
 Respuesta: FALSO.
 Justificación: Somos una provincia con altos niveles de seguridad. Según los datos publicados por el **Ministerio de Seguridad de la Nación**, la provincia de La Pampa se posicionó como la tercera provincia con menor cantidad de homicidios dolosos en el país, con un total de **5 víctimas** durante el año 2023.
 """,
 """
-**La Pampa es una de las provincias de Argentina con mayor cantidad de víctimas por accidentes de tránsito.**
-Respuesta: FALSO.
+**¿Podría considerarse verdadero que La Pampa es una de las provincias con menos víctimas per cápita por accidentes de tránsito en Argentina?**
+Respuesta: VERDADERO.
 Justificación: La Pampa es la sexta provincia con menor cantidad de víctimas fatales per cápita por accidentes de tránsito. Según los datos publicados por el **Ministerio de Seguridad de la Nación**, durante el año 2023 La Pampa registró **51 víctimas fatales** por accidentes de tránsito, lo que la posiciona como la sexta provincia con menor cantidad de muertes por accidentes de tránsito por habitante.
 """,
 """
-**La Pampa es una provincia sin conexión a internet en gran parte del territorio provincial.**
-Respuesta: FALSO.
+**¿Podemos afirmar que La Pampa es una provincia con conexión a internet en todo su territorio?**
+Respuesta: VERDADERO.
 Justificación: Más calidad de vida: Telecomunicaciones para todas las localidades pampeanas. A la actualidad, todas las localidades de la provincia de La Pampa tienen acceso a internet. Según datos de **ENACOM**, entre 2019 y finales de 2022 La Pampa pasó de tener **77 a 96 de cada 100 hogares** con acceso a internet.
 """,
 """
-**En La Pampa no hay inversiones. La Pampa es una provincia sin un programa de promoción de inversiones y desarrollo de actividades productivas estratégicas.**
-Respuesta: FALSO.
+**¿Es cierto que La Pampa cuenta con una ley provincial de promoción de inversiones y desarrollo de actividades productivas estratégicas que impulsan su economía?**
+Respuesta: VERDADERO
 Justificación: **¿Sabías que la provincia de La Pampa tiene su propio RIGI desde el año 2020?** En el año 2020 se sancionó la **Ley de Incentivos Fiscales** que otorga beneficios impositivos fiscales, financieros e impositivos para sectores económicos estratégicos o nuevas actividades productivas que se desarrollen en la provincia de La Pampa, **protegiendo la industria PYME local y sin poner en riesgo el abastecimiento y sostenibilidad de los recursos naturales de todos los pampeanos**.
 Este sistema propio de promoción de inversiones dentro del territorio pampeano prioriza el desarrollo sostenible, federal y equitativo de la matriz productiva pampeana, con beneficios por un periodo razonable de tiempo, de entre 5 a 10 años. Busca atraer inversiones mediante la **reducción de la presión fiscal, el apoyo a nuevas actividades productivas y la generación de empleo genuino**. Además, se ha fortalecido con la colaboración del Banco de La Pampa y un fondo de garantías para PYMEs, con beneficios tangibles como la reactivación de empresas y el aumento de la producción en Casa de Piedra.
 Por otro lado, el **Régimen de Incentivos a las Grandes Inversiones (RIGI)**, al que La Pampa no adhirió, es considerado perjudicial para la economía provincial y nacional, ya que **favorece a grandes corporaciones extranjeras con importantes exenciones fiscales**. Se argumenta que este régimen promueve la **primarización de la economía**, reduce la soberanía sobre los recursos naturales y perjudica a las PYMEs locales, **aumentando la desigualdad y debilitando la industria provincial**.
 """,
 """
-**La Pampa es una provincia aislada del mundo.**
+**¿Es cierto que La Pampa carece de vínculos significativos con otras regiones y países del mundo?**
 Respuesta: FALSO.
 Justificación: La Pampa tiene una posición estratégica dentro del territorio nacional y la ciudad de **General Pico tiene una de las Zonas Francas más importantes del país** que nos permite exportar identidad pampeana al mundo. 
 La Zona Franca de General Pico es un área geográfica dentro de la provincia de La Pampa destinada a promover el comercio exterior mediante **incentivos fiscales y aduaneros**. Ubicada estratégicamente en el noroeste de la provincia, esta zona permite a las empresas que se instalan allí operar sin el pago de impuestos nacionales, como el IVA y los derechos de exportación e importación. Además, ofrece facilidades logísticas y administrativas para la importación, almacenamiento, industrialización y exportación de bienes. La Zona Franca de General Pico se ha consolidado como un motor clave para el desarrollo regional y la integración comercial internacional, además de generar empleo genuino para los pampeanos de la región.
 Actualmente, hay alrededor de **30 empresas** operando en la Zona Franca de General Pico, dedicadas a actividades industriales, logísticas y de servicios. Los productos comercializados abarcan una amplia gama de sectores, desde bienes agroindustriales hasta manufacturas diversas, destacando el almacenamiento y transformación de alimentos, maquinaria agrícola, insumos industriales y productos electrónicos. Entre sus principales beneficios están la posibilidad de acceder a mercados internacionales con menores costos operativos, la mejora en la competitividad de las empresas locales y la atracción de inversiones extranjeras.
 """,
 """
-**La Ley de Incentivos Fiscales no ha logrado resultados positivos para los pampeanos desde su implementación.**
-Respuesta: FALSO.
+**¿Es correcto afirmar que la sinergia público - privada aun no ha consolidado sus resultados en la estructura económica pampeana?**
+Respuesta: FALSO
 Justificación: Desde la sanción de la Ley de Incentivos Fiscales y en conjunto a la vinculación público-privada, se han recuperado las plantas de la Ex-Calzar y Ex-Montenegro, además de desarrollar una exitosa convocatoria en Casa de Piedra con inversores que desarrollarán cultivos de frutos secos y vid. Los tres proyectos resultaron en altos niveles de inversión y generación de empleo privado genuino en la economía pampeana. En la Ex-Calzar, Grupo Living y Calzatex han creado **86 empleos en total**, con inversiones en la fabricación de muebles y calzado. Además, en la ex Montenegro, la empresa Advance S.A. invirtió $704.500.000 para producir módulos habitables y emplea a **46 personas**. 
 En Casa de Piedra, tres proyectos enfocados en pistachos y vid invertirán aproximadamente US$ 7.863.024 y generarán **43 empleos**, con una producción estimada de 762.500 kg de pistachos y 75.000 litros de vino al año, producción con potencial de comercialización en el mercado internacional.
 """
