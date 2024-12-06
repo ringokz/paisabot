@@ -149,13 +149,6 @@ def render_intro():
             on_click=select_trivia,  # Conecta el callback
             use_container_width=True,
         )
-    with btn_col3:
-        st.button(
-            "**Payador con IA 🎤🧉**",
-            key="intro_payador",
-            on_click=select_payador,  # Conecta el callback
-            use_container_width=True,
-        )
 
 # Funciones de selección
 def select_mito_realidad():
